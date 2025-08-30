@@ -11,53 +11,54 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+/* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Lato", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --nav-font: "Playfair Display", serif; /* pour cohérence élégante dans menus */
+  --accent-font: "Dancing Script", "Italianno", cursive; /* pour citations & accroches */
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors - adaptées à la charte client */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #4e4e4e; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0a090f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0078ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #F8F5F0; /* Blanc cassé chaleureux */
+  --default-color: #4e4e4e; /* Texte courant neutre */
+  --heading-color: #0B1E3C; /* Bleu nuit profond pour titres */
+  --accent-color: #E07A5F; /* Corail/cuivre pour hover & accents */
+  --surface-color: #ffffff; /* Surfaces / cartes */
+  --contrast-color: #ffffff; /* Texte contrastant sur fond foncé */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0078ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;  /* Bleu nuit pour liens */
+  --nav-hover-color: #C9A14A; /* Or chaud au hover */
+  --nav-mobile-background-color: #F8F5F0; /* Fond blanc cassé */
+  --nav-dropdown-background-color: #ffffff; /* Fond clair pour sous-menus */
+  --nav-dropdown-color: #0B1E3C; /* Liens sous-menu */
+  --nav-dropdown-hover-color: #C9A14A; /* Hover sous-menu en or chaud */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
+/* Color Presets - ajustés */
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #F8F5F0;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #0B1E3C; /* Bleu nuit */
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
+  --heading-color: #C9A14A; /* Or chaud en titre sur fond sombre */
+  --surface-color: #1a2a4a; /* Variante plus claire du bleu nuit */
   --contrast-color: #ffffff;
 }
 
 .accent-background {
-  --background-color: #0078ff;
+  --background-color: #E07A5F; /* Corail accent */
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --accent-color: #ffffff;
-  --surface-color: #3393ff;
+  --accent-color: #C9A14A; /* Or pour contraste */
+  --surface-color: #f29985; /* Ton clair du corail */
   --contrast-color: #ffffff;
 }
 
